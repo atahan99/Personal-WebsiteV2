@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atahan's Personal Website</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="../assets/images/my-avatar.png" alt="Atahan Kucuk" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Atahan Kucuk">Atahan Kucuk</h1>
+
+          
+          <p class="title">Web developer, <br> Network Engineer, <br> Cybersecurity Engineer, <br> Software Developer </p>
+            
+        
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:akucuk@purdue.edu" class="contact-link">akucuk@purdue.edu</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+17657018351" class="contact-link">+1 (765) 701-8351</a>
+            </div>
+
+          </li>
+
+          
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>West Lafayette, Indiana, USA</address>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+            <form method="get" action="../assets/pdf/Resume.pdf">
+              <button class="form-btn" type="submit">My Full Resume</button>
+            </form>
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/atahan-kucuk/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/atahan99" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link onclick="history.back()">Back</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <article class="about active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">Incident Response</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            This lab was about incident response. It involved everything from setting up the enviorement to creation of some non-technical documents. These non-technical documents were some example policy guidelines (such as: acceptable use policy), baseline check, jumpbag list, risk register, specific plans for the loss of confidential information, specific plans for the loss of availibility of services, and specific plans for the loss of information integrity. Furthermore, Elastic Stack and OSSEC was installed on the machines other than two dedicated servers for hosting Elastick Stack and OSSEC server. Additionally a Honeypot was also configured. Lastly 3 incident response reports were made as a result of different attacks on confidentiality, integrity and availibility of the systems of the network. Below are some of the revelant screenshots and the network diagram of the lab setup. The lab enviorement was configured on a VMware vSphere server.
+          </p>
+          <h4 class="h4 timeline-item-title"> <font color="DodgerBlue"><strong>OS: </strong></font> <font color="#FFFFFF"><strong> Windows Server 2008, Windows Server 2019, Windows 10, CentOS 7, Debian 9, Ubuntu 16.04, Ubuntu 20.04</strong></font></h4>
+          <h4 class="h4 timeline-item-title"> <font color="DodgerBlue"><strong>Tools: </strong></font> <font color="#FFFFFF"><strong> OSSEC, Elastic Stack (Elasticsearch, Kibana, Beats, and Logstash), Honeypot (KFSensor)</strong></font></h4>
+          <img src="../assets/images/works/incresp_2.png" alt="incident" width="100%" class="center">
+          <img src="../assets/images/works/incresp_4.png" alt="incident" width="100%" class="center">
+          <img src="../assets/images/works/incresp_1.png" alt="incident" width="100%" class="center">
+          <img src="../assets/images/works/incresp_3.png" alt="incident" width="100%" class="center">
+
+          <p> </p>
+
+         
+
+          
+
+        </section>
+
+      </article>
+
+    </div>
+
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="../assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

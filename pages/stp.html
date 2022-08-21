@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atahan's Personal Website</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="../assets/images/my-avatar.png" alt="Atahan Kucuk" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Atahan Kucuk">Atahan Kucuk</h1>
+
+          
+          <p class="title">Web developer, <br> Network Engineer, <br> Cybersecurity Engineer, <br> Software Developer </p>
+            
+        
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:akucuk@purdue.edu" class="contact-link">akucuk@purdue.edu</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+17657018351" class="contact-link">+1 (765) 701-8351</a>
+            </div>
+
+          </li>
+
+          
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>West Lafayette, Indiana, USA</address>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+            <form method="get" action="../assets/pdf/Resume.pdf">
+              <button class="form-btn" type="submit">My Full Resume</button>
+            </form>
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/atahan-kucuk/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/atahan99" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link onclick="history.back()">Back</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <article class="about active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">Spanning Trees and Network Performance</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            In this lab, the operations of several LAN-centric concepts were examined and put to use. VLANs, Spanning Tree Protocol and Link Aggregation were used throughout the lab. The physical architecture was first setup, then spanning tree was implemented across the network, VLANs were designed and added, Link Aggregation was implemented across the network and finally, using Access Control, certain VLANs and switches had their accessibility edited for specific purposes.
+
+
+        </p>
+
+          <p>
+            The network architecture was set up where there is a single Cisco 1911 router that is connected to a Catalyst 3750 switch. That 3750 was then connected to a HP ProCurve switch which was then later modified to be connected via link aggregation. The Catalyst 3750 was also connected to a Cisco 2950 switch via a single link. Finally, both the ProCurve and 2950 were connected to a second Cisco 2950 switch.
+
+
+
+        </p>
+        <p>
+            Rapid Spanning Tree was implemented across the network. Each port state was observed as the spanning tree topology was negotiated and converged, The root-bridge was identified as the Catalyst 3750. Then, instead of rapid spanning tree protocol (RSTP), multiple spanning tree (MST) was implemented across the network.
+
+
+        </p>
+        <p>When designing the VLANs, a dedicated VLAN was used as the dedicated switch management VLAN. Doing this meant limiting access to this VLAN from all other VLANs. Nine VLANs were created for the nine departments: server, engineering, sales, accounting, voice, wireless, support, printer and management. An address space was defined for each of the VLANs. Then the VLANs were able to communicate with the others by pinging each other.
+        </p>
+        <p>
+            The HP ProCurve and Catalyst 3750 were then connected via link aggregation. Then access to the switch management VLAN was limited to only devices on the server and support VLANs. Finally, access to the printer VLAN was limited to block any non-print job traffic from all VLANs except the server and support VLANs.
+
+        </p>
+          <h4 class="h4 timeline-item-title"> <font color="DodgerBlue"><strong>Network Gear: </strong></font> <font color="#FFFFFF"><strong> HP ProCurve, Cisco Catalyst 3750, Cisco 2950 Switch, Cisco 1900 Router</strong></font></h4>
+          <img src="../assets/images/works/network.jpg" alt="incident" width="100%" class="center">
+
+          <p> </p>
+
+         
+
+          
+
+        </section>
+
+      </article>
+
+    </div>
+
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="../assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atahan's Personal Website</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="../assets/images/my-avatar.png" alt="Atahan Kucuk" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Atahan Kucuk">Atahan Kucuk</h1>
+
+          
+          <p class="title">Web developer, <br> Network Engineer, <br> Cybersecurity Engineer, <br> Software Developer </p>
+            
+        
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:akucuk@purdue.edu" class="contact-link">akucuk@purdue.edu</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+17657018351" class="contact-link">+1 (765) 701-8351</a>
+            </div>
+
+          </li>
+
+          
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>West Lafayette, Indiana, USA</address>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+            <form method="get" action="../assets/pdf/Resume.pdf">
+              <button class="form-btn" type="submit">My Full Resume</button>
+            </form>
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/atahan-kucuk/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/atahan99" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link onclick="history.back()">Back</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <article class="about active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">VPNs</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            This lab is expanding upon the firewalls lab. Same network diagram is used for this lab as well. The lab enviorement was configured on a VMware vSphere server.
+        </p>
+
+          <p>
+            In order to allow authentication for the client-access VPNs RADIUS was configured on Active Directory domain controllers. Moving on, IPsec site-to-site VPN was configured using IKEv2 to provide VPN access between the private networks attached to the firewalls. This was configured on both VyOS and PfSense firewalls.
+        </p>
+        <p>
+            Next, an IPsec client-access VPN was properly configured using IKEv1 to provide VPN access from the Windows10IPsec virtual machine to the pfSense-side DMZ. After configuring the VPN and implementing the proper firewall rules on pfSense, a Shrew Soft VPN client was installed and configured accordingly on the Windows10IPsec virtual machine. This client-access VPN was tested by demonstrating access to an Apache server located within the pfSense-side DMZ, which was inaccessible from other public clients.
+        </p>
+        <p>
+            Next, an L2TP client-access VPN was properly configured to provide VPN access from the Windows10L2TP virtual machine to the Private B network. It was configured to use the RADIUS server in the Private B network for authentication. After configuring the VPN and implementing the proper firewall rules on VyOS, a VPN connection was added to the Windows10L2TP using the built-in Windows 10 VPN settings. This client-access VPN was tested by demonstrating access to an IIS server located within the Private B network, which was inaccessible from other public clients.
+
+
+        </p>
+        <p>Finally, an OpenVPN client-access VPN was properly configured to provide VPN access from the Windows10SSL virtual machine to the Private A network. It was configured to use the RADIUS server in the Private A network for authentication. After configuring the VPN and implementing the proper firewall rules on pfSense, and OpenVPN GUI VPN client was installed and configured using a client configuration file generated by the OpenVPN pfSense package. This client-access VPN was tested by demonstrating access to an IIS server located within the Private A network, which was inaccessible from other public clients. Continuation of this lab can be found on intrusion detection page.
+
+        </p>
+
+          <h4 class="h4 timeline-item-title"> <font color="DodgerBlue"><strong>VPN Protocols: </strong></font> <font color="#FFFFFF"><strong> OpenVPN, IPSec Site-to-Site, IPSec Client-Access, L2TP over IPSec</strong></font></h4>
+          <img src="../assets/images/works/vpn_1.jpg" alt="incident" width="100%" class="center">
+
+          <p> </p>
+
+         
+
+          
+
+        </section>
+
+      </article>
+
+    </div>
+
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="../assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
