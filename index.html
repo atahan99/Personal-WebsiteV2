@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atahan's Personal Website</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Atahan Kucuk" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Atahan Kucuk">Atahan Kucuk</h1>
+
+          
+          <p class="title">Web developer, <br> Network Engineer, <br> Cybersecurity Engineer, <br> Software Developer </p>
+            
+        
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:akucuk@purdue.edu" class="contact-link">akucuk@purdue.edu</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+17657018351" class="contact-link">+1 (765) 701-8351</a>
+            </div>
+
+          </li>
+
+          
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>West Lafayette, Indiana, USA</address>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+            <form method="get" action="./assets/pdf/Resume.pdf">
+              <button class="form-btn" type="submit">My Full Resume</button>
+            </form>
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/atahan-kucuk/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/atahan99" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+          
+          
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article  class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm Atahan, a cybersecurity and network engineer based in the USA. 
+            
+          </p>
+          <p>
+            I'm dual majoring in cybersecurity and network engineering technology at Purdue University. I will be graduating in December 2022.
+          </p>
+          
+          
+          <p>
+            If you’re interested in connecting with me, feel free to reach out through LinkedIn or email!
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I do </h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  I design and develop websites.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Software Development</h4>
+
+                <p class="service-item-text">
+                  I develop software.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/laptop.svg" alt="laptop" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Hacking</h4>
+
+                <p class="service-item-text">
+                  I do penetration testing, vulnerability scanning, incident response, digital forensics and more. In short I hack into things. 
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/wifi.svg" alt="wifi" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Networking</h4>
+
+                <p class="service-item-text">
+                  I build and test wired and wireless network infrastructure.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        
+          
+
+      </article>
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article  class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+          
+
+         
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"><a href="https://www.purdue.edu/"><span style="color:#FFFFFF"><strong>Purdue University</strong></span></a></h4>
+
+              <span>2018-2022</span>
+              <span style="color:DodgerBlue">B.S in Computer and Information Technology (Majors: Cybersecurity and Network Engineering Technology)</span>
+              <p class="timeline-text">
+                <span style="color:#7FFF00">Notable Coursework:</span> Cyber Forensics, Cybersecurity Fundamentals, Data Communications and Networking,
+                Database Fundamentals, Incident Response Management, Internet Design and Implementation, Systems
+                Development, Intro to Cryptography, Network Administration, Network Security, Object Oriented Programming,
+                Storage Area Networking, Systems Administration, Systems Programming, UNIX fundamentals, Wireless Networks,
+                Vulnerability Analysis and Testing, Social Engineering, Systems Analysis and Design, Cyber Criminology
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="construct"></ion-icon>
+            </div>
+
+            <h3 class="h3">Project Experience</h3>
+          </div>
+
+          <p>More detailed explanation or showcase of the below mentioned projects can be found on the portfolio section.<br /><br /></p>
+
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Personal Website V2</h4>
+
+              <span>2022 — Present</span>
+
+              <p class="timeline-text">
+                <ul>
+                  <li class="regular-list">Redesigned my personal portfolio website.</li>
+                  <li class="regular-list"><b>Tech Stack: </b>HTML, JavaScript, CSS, Github Pages</li>
+                </ul>
+              </p>
+
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Homelab</h4>
+
+              <span>2022 — Present</span>
+
+              <p class="timeline-text">
+                <ul>
+                  <li class="regular-list"> </li>
+                  <li class="regular-list"> <b>Tech Stack: </b> Ansible, Docker, Ubuntu Server</li>
+                </ul>
+              </p>
+
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Personal Website V1</h4>
+
+              <span>2021 — 2022</span>
+
+              <p class="timeline-text">
+                <ul>
+                  <li class="regular-list">Designed and coded personal website to showcase previous personal projects and course lab work.</li>
+                  <li class="regular-list"><b>Tech Stack:</b> Next.js, Chakra UI, Framer Motion, Vercel.</li>
+                  <li class="regular-list">Click the link below to preview the previous version of my personal website.</li>
+                  <li class="regular-list"><a href="https://personal-website-delta-smoky.vercel.app/">previous version of the website</a></li>
+
+                </ul>
+              </p>
+
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Digital Forensics Lab</h4>
+
+              <span>2021 — 2022</span>
+
+              <p class="timeline-text">
+                <ul>
+                  <li class="regular-list">Performed digitial forensics investigation labs on given disks, disk images and Android mobile devices. </li>
+                </ul>
+              </p>
+
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Incident Response Lab</h4>
+
+              <span>2021 — 2022</span>
+
+              <p class="timeline-text">
+                <ul>
+                  <li class="regular-list">Deployed and enterprise network system including legacy and modern systems, devised, and implemented Computer
+                    Incident Response Plan (CIRP) and tested with attacks targetting the CIA (Confidentiality, Integrity, Availibaility) triad.
+                  </li>
+                  <li class="regular-list">Implemented hardening measures on Ubuntu machines per CIS Ubuntu Linux Benchmarks.</li>
+                  <li class="regular-list">Utilized Elastic Stack for this lab.</li>
+
+                </ul>
+              </p>
+
+            </li>
+            
+            
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Programming & Bash/Shell Scripting</h4>
+
+              <span>2020 — 2022</span>
+
+              <p class="timeline-text">
+                <ul>
+                  <li class="regular-list">Developped a simple Wheel of Fortune game using Python. </li>
+                  <li class="regular-list">Developped several applications using C, Java, Python and C#.</li>
+                  <li class="regular-list">Experiencened with bash/shell scripting. </li>
+                  <li class="regular-list">Utilized Oracle SQL to filter out a database and created ERD designs of a database. </li>
+
+                </ul>
+              </p>
+
+            </li>
+            
+          
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Network Infrastructure Projects</h4>
+
+              <span>2018 — 2022</span>
+
+              <p class="timeline-text">
+                <ul>
+                  <li class="regular-list">Architected and configured several enterprise network enviorements involving multiple different network products
+                    from different vendors, Active Directory, VPNs, routing, firewalls, and network administration. </li>
+                  <li class="regular-list">Utilized pfSense and VyOS firewalls in addition to manually(on paper) configuring and understanding firewall tables/configurations.</li>
+                </ul>
+              </p>
+
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">RaspberryPi Security Camera</h4>
+
+              <span>2018 — 2018</span>
+
+              <p class="timeline-text">
+                <ul>
+                  <li class="regular-list">Built a RaspberryPi security camera with motion detection capabilities by utilizing OpenCV and Python, that noties via email. </li>
+                </ul>
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+
+        <!--
+
+        skills
+        -->
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+          
+        <h3 class="h3">My SKills</h3>
+          </div>
+
+          <ol class="timeline-list">
+            
+            <li class="timeline-item">
+
+              <p class="h4 timeline-item-title"> <font color="DodgerBlue"><strong>Programming: </strong></font> <font color="#FFFFFF"> Python, Java, C, C#, SQL, Bash, git</font></p>
+   
+            </li>
+            <li class="timeline-item">
+
+              <p class="h4 timeline-item-title"> <font color="DodgerBlue"><strong>Data Visualization: </strong></font> <font color="#FFFFFF"> Tableau, PowerBI</font></p>
+   
+            </li>
+            <li class="timeline-item">
+
+              <p class="h4 timeline-item-title"> <font color="DodgerBlue"><strong>Web Design: </strong></font> <font color="#FFFFFF">JavaScript, HTML, CSS, Wordpress</font></p>
+   
+            </li>
+            <li class="timeline-item">
+
+              <p class="h4 timeline-item-title"> <font color="DodgerBlue"><strong>Operating Systems: </strong></font> <font color="#FFFFFF">Windows, Windows Server, Linux (Kali, Ubuntu, CentOS, Debian, Arch), FreeBSD, MacOS</font></p>
+   
+            </li>
+            <li class="timeline-item">
+
+              <p class="h4 timeline-item-title"> <font color="DodgerBlue"><strong>Network Tools: </strong></font> <font color="#FFFFFF">Wireshark, Nmap, OSSEC, Elastic Stack, Metasploit, Nessus</font></p>
+   
+            </li>
+            <li class="timeline-item">
+
+              <p class="h4 timeline-item-title"> <font color="DodgerBlue"><strong>Firewalls: </strong></font> <font color="#FFFFFF"> pfSense, VyOS </font></p>
+   
+            </li>
+             <li class="timeline-item">
+
+              <p class="h4 timeline-item-title"> <font color="DodgerBlue"><strong>Digital Forensics: </strong></font> <font color="#FFFFFF">Autopsy, OSForensics, Magnet AXIOM, Cellebrite</font></p>
+   
+            </li>
+            <li class="timeline-item">
+
+              <p class="h4 timeline-item-title"> <font color="DodgerBlue"><strong>Virtualization: </strong></font> <font color="#FFFFFF">VMware ESXI, VMware Workstation, Virtualbox, Parallels, UTM, Docker TrueNAS</font></p>
+   
+            </li>
+            <li class="timeline-item">
+
+              <p class="h4 timeline-item-title"> <font color="DodgerBlue"><strong>Hardware: </strong></font> <font color="#FFFFFF">Raspberry Pi, Cisco IOS Networking Devices, Aruba Networking Gear</font></p>
+   
+            </li>
+            <li class="timeline-item">
+
+              <p class="h4 timeline-item-title"> <font color="DodgerBlue"><strong>Hard Skills: </strong></font> <font color="#FFFFFF">Penetration Testing, Forensics Investigation, Risk Assessment, Intrusion Detection, Troubleshooting,
+                Routing Protocols, Active Directory, VPN Protocols, TCP/IP, Incident Response, Virtualization</font></p>
+   
+            </li>
+            
+          </ol>
+
+        </section>
+        
+
+            
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+    
+      <article  class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <p>Click on 'All' button to make sure all project elemenents are loaded.<br /><br /></p>
+        
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Networking</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Programming</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Hacking</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Networking</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Programming</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Hacking</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="hacking">
+              <a href="./pages/incident.html">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/works/incresp.jpg" alt="incresp" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Incident Response</h3>
+
+                <p class="project-category">Hacking</p>
+                
+
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="networking">
+              <a href="./pages/firewalls.html">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/works/firewalls.jpg" alt="firewalls" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Firewalls</h3>
+
+                <p class="project-category">Networking</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="networking">
+              <a href="./pages/vpns.html">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/works/vpn.jpg" alt="vpn" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">VPNs</h3>
+
+                <p class="project-category">Networking</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="hacking">
+              <a href="./pages/intrusion.html">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/works/intdect.jpg" alt="int" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Intrusion Detection</h3>
+
+                <p class="project-category">Hacking</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="hacking">
+              <a href="./pages/forensics.html">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/works/digfor.jpg" alt="digfor." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Digital Forensics</h3>
+
+                <p class="project-category">Hacking</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="networking">
+              <a href="./pages/stonet.html">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/works/stonet.jpg" alt="stonet" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Storage Area Networking</h3>
+
+                <p class="project-category">Networking</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="networking">
+              <a href="./pages/netadm.html">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/works/netadm.jpg" alt="netadm" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Network Administration</h3>
+
+                <p class="project-category">Networking</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="programming">
+              <a href="./pages/softdev.html">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/works/coding.jpg" alt="code" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Software Development</h3>
+
+                <p class="project-category">Programming</p>
+
+              </a>
+            </li>
+
+            <li class="project-item" data-filter-item data-category="networking">
+              <a href="./pages/stp.html">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/works/network2.jpg" alt="span" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Spanning Trees and Network Performance</h3>
+
+                <p class="project-category">Networking</p>
+                
+
+              </a>
+            </li>
+
+            <li class="project-item" data-filter-item data-category="networking">
+              <a href="./pages/enterprise.html">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/works/enterprise1.jpg" alt="ent" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Enterprise Network Infrastructure</h3>
+
+                <p class="project-category">Networking</p>
+                
+
+              </a>
+            </li>
+
+            <li class="project-item" data-filter-item data-category="networking">
+              <a href="./pages/routing.html">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/works/network3.jpg" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Routing</h3>
+
+                <p class="project-category">Networking</p>
+                
+
+              </a>
+            </li>
+
+            <li class="project-item" data-filter-item data-category="networking">
+              <a href="./pages/redunt.html">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/works/firewalls.jpg" alt="red" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Redundant LAN Gateways</h3>
+
+                <p class="project-category">Networking</p>
+                
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+    
+    
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article  class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48576.30426117042!2d-86.95186222684312!3d40.452716079277984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8812fd472165042d%3A0xdf75e293a8a11bef!2sWest%20Lafayette%2C%20IN%2C%20USA!5e0!3m2!1sen!2str!4v1659911016903!5m2!1sen!2str"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" enabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
