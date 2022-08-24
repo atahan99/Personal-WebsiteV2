@@ -77,14 +77,14 @@
   --ff-poppins: 'Poppins', sans-serif;
 
   /* font-size */
-  --fs-1: 33px;
-  --fs-2: 29px;
-  --fs-3: 27px;
-  --fs-4: 25px;
-  --fs-5: 23px;
-  --fs-6: 21px;
-  --fs-7: 18px;
-  --fs-8: 15px;
+  --fs-1: 24px;
+  --fs-2: 18px;
+  --fs-3: 17px;
+  --fs-4: 16px;
+  --fs-5: 15px;
+  --fs-6: 14px;
+  --fs-7: 13px;
+  --fs-8: 11px;
 
   /* font-weight */
   --fw-300: 300;
@@ -137,6 +137,13 @@ li.regular-list {
 }
 
 img, ion-icon, a, button, time, span { display: block; }
+
+a.regular {
+  text-decoration:underline;
+  text-decoration-color: var( --vegas-gold);
+  display: inline;
+  color: var( --vegas-gold);
+}
 
 button {
   font: inherit;
