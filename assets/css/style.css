@@ -330,12 +330,12 @@ main {
 
 .sidebar {
   margin-bottom: 20px;
-  max-height: none;
+  max-height: 2000px;
   overflow: visible;
   transition: var(--transition-2);
 }
 
-.sidebar.active { max-height: none; }
+.sidebar.active { max-height: 2000px; }
 
 .sidebar-info {
   position: relative;
@@ -409,14 +409,14 @@ main {
 .sidebar-info_more {
   opacity: 1;
   visibility: visible;
-  max-height: none;
+  max-height: 2000px;
   transition: var(--transition-2);
 }
 
 .sidebar.active .sidebar-info_more {
   opacity: 1;
   visibility: visible;
-  max-height: none;
+  max-height: 2000px;
 }
 
 .contacts-list {
