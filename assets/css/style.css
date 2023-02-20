@@ -407,8 +407,8 @@ main {
 */
 
 .sidebar-info_more {
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
+  visibility: visible;
   max-height: none;
   transition: var(--transition-2);
 }
