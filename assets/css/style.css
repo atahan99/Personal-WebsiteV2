@@ -330,12 +330,12 @@ main {
 
 .sidebar {
   margin-bottom: 15px;
-  max-height: 2000px;
+  /*max-height: 2000px;*/
   overflow: hidden;
   transition: var(--transition-2);
 }
 
-.sidebar.active { max-height: 2000px; }
+/*.sidebar.active { max-height: 2000px; }*/
 
 .sidebar-info {
   position: relative;
