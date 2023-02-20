@@ -329,14 +329,13 @@ main {
 \*-----------------------------------*/
 
 .sidebar {
-  margin-bottom: 15px;
-  /*max-height: 2000px;*/
-  /*overflow: hidden;*/
-  overflow: visible;
+  margin-bottom: 20px;
+  max-height: none;
+  overflow: hidden;
   transition: var(--transition-2);
 }
 
-/*.sidebar.active { max-height: 2000px; }*/
+.sidebar.active { max-height: none; }
 
 .sidebar-info {
   position: relative;
