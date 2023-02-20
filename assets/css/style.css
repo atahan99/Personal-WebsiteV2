@@ -409,12 +409,14 @@ main {
 .sidebar-info_more {
   opacity: 0;
   visibility: hidden;
+  max-height: none;
   transition: var(--transition-2);
 }
 
 .sidebar.active .sidebar-info_more {
   opacity: 1;
   visibility: visible;
+  max-height: none;
 }
 
 .contacts-list {
