@@ -335,7 +335,7 @@ main {
   transition: var(--transition-2);
 }
 
-.sidebar.active { max-height:none; }
+.sidebar.active { max-height: none; }
 
 .sidebar-info {
   position: relative;
