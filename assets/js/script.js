@@ -8,8 +8,8 @@ const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
 
 // sidebar variables
-const sidebar = document.querySelector("[data-sidebar]");
-const sidebarBtn = document.querySelector("[data-sidebar-btn]");
+//const sidebar = document.querySelector("[data-sidebar]");
+//const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 
 // sidebar toggle functionality for mobile
 //sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
@@ -50,9 +50,9 @@ const filterFunc = function (selectedValue) {
       filterItems[i].classList.add("active");
     } else if (selectedValue === filterItems[i].dataset.category) {
       filterItems[i].classList.add("active");
-    } else {
-      filterItems[i].classList.remove("active");
-    }
+    } else //{
+      //filterItems[i].classList.remove("active");
+   // }
 
   }
 
