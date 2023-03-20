@@ -123,13 +123,13 @@ for (let i = 0; i < navigationLinks.length; i++) {
 }
 
 
-
+/*
 //scroll back
 function scrollToSection(id) {
   const article = document.getElementById(id);
   article.scrollIntoView({ behavior: "smooth" });
 }
-
+*/
 
 /*
 
