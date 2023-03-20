@@ -126,8 +126,8 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
 //scroll back
 function scrollToSection(id) {
-  const section = document.getElementById(id);
-  section.scrollIntoView({ behavior: "smooth" });
+  const article = document.getElementById(id);
+  article.scrollIntoView({ behavior: "smooth" });
 }
 
 
