@@ -122,7 +122,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-/*
+
 
 // get references to the sections using their id attributes
 var aboutSection = document.getElementById("about");
@@ -137,18 +137,17 @@ function scrollToSection(section) {
 
 // add event listeners to links or buttons that trigger scrolling
 document.getElementById("about-link").addEventListener("click", function() {
-  scrollToSection(aboutSection);
+  scrollToSection(about);
 });
 
 document.getElementById("resume-link").addEventListener("click", function() {
-  scrollToSection(resumeSection);
+  scrollToSection(resume);
 });
 
 document.getElementById("portfolio-link").addEventListener("click", function() {
-  scrollToSection(portfolioSection);
+  scrollToSection(portfolio);
 });
 
 document.getElementById("contact-link").addEventListener("click", function() {
-  scrollToSection(contactSection);
+  scrollToSection(contact);
 });
-*/
