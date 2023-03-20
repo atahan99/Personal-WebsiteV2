@@ -121,3 +121,34 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+/*
+
+// get references to the sections using their id attributes
+var aboutSection = document.getElementById("about");
+var resumeSection = document.getElementById("resume");
+var portfolioSection = document.getElementById("portfolio");
+var contactSection = document.getElementById("contact");
+
+// function to scroll to a section
+function scrollToSection(section) {
+  section.scrollIntoView({ behavior: "smooth" });
+}
+
+// add event listeners to links or buttons that trigger scrolling
+document.getElementById("about-link").addEventListener("click", function() {
+  scrollToSection(aboutSection);
+});
+
+document.getElementById("resume-link").addEventListener("click", function() {
+  scrollToSection(resumeSection);
+});
+
+document.getElementById("portfolio-link").addEventListener("click", function() {
+  scrollToSection(portfolioSection);
+});
+
+document.getElementById("contact-link").addEventListener("click", function() {
+  scrollToSection(contactSection);
+});
+*/
