@@ -124,6 +124,15 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
 
 
+//scroll back
+function scrollToSection(id) {
+  const section = document.getElementById(id);
+  section.scrollIntoView({ behavior: "smooth" });
+}
+
+
+/*
+
 // get references to the sections using their id attributes
 var aboutSection = document.getElementById("about");
 var resumeSection = document.getElementById("resume");
@@ -151,3 +160,5 @@ document.getElementById("portfolio-link").addEventListener("click", function() {
 document.getElementById("contact-link").addEventListener("click", function() {
   scrollToSection(contact);
 });
+
+*/
