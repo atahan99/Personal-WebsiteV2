@@ -1554,7 +1554,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   main {
-    max-width: 1200px;
+    max-width: 3000px;
     margin-inline: auto;
     display: flex;
     justify-content: center;
