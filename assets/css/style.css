@@ -77,14 +77,14 @@
   --ff-poppins: 'Poppins', sans-serif;
 
   /* font-size */
-  --fs-1: 24px;
-  --fs-2: 18px;
-  --fs-3: 17px;
-  --fs-4: 16px;
-  --fs-5: 15px;
-  --fs-6: 14px;
-  --fs-7: 13px;
-  --fs-8: 11px;
+  --fs-1: 48px;
+  --fs-2: 36px;
+  --fs-3: 34px;
+  --fs-4: 32px;
+  --fs-5: 28px;
+  --fs-6: 26px;
+  --fs-7: 26px;
+  --fs-8: 22px;
 
   /* font-weight */
   --fw-300: 300;
@@ -96,11 +96,11 @@
    * shadow
    */
   
-  --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
-  --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
-  --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
-  --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
-  --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
+  --shadow-1: -6px 12px 36px hsla(0, 0%, 0%, 0.25);
+  --shadow-2: 0 24px 45px hsla(0, 0%, 0%, 0.25);
+  --shadow-3: 0 24px 60px hsla(0, 0%, 0%, 0.25);
+  --shadow-4: 0 38px 75px hsla(0, 0%, 0%, 0.15);
+  --shadow-5: 0 36px 120px hsla(0, 0%, 0%, 0.25);
 
   /**
    * transition
