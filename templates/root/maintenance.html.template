@@ -58,7 +58,6 @@
 
         <section class="about-text">
           <p>{{MAINT_BODY_1}}</p>
-          <p>{{MAINT_BODY_2}}</p>
         </section>
 
       </article>

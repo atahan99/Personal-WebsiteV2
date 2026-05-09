@@ -68,7 +68,7 @@ Copy [`.env.example`](.env.example) → `.env`, adjust variables, then `npm run 
 | `SITE_TITLE`, `DISPLAY_NAME`, `PROFILE_TITLE`, `PROFILE_IMAGE_ALT` | Showcase branding |
 | `PUBLIC_EMAIL`, `PUBLIC_EMAIL_VISIBLE`, `PUBLIC_EMAIL_LABEL`, `LOCATION_LABEL` | Optional contact rows |
 | `LINKEDIN_URL`, `GITHUB_PROFILE_URL` | Optional social icons |
-| `MAINT_*` | Maintenance page copy (`MAINT_BODY_2` may contain HTML such as `<code>`) |
+| `MAINT_*` | Maintenance page copy (`MAINT_BODY_1` is plain text) |
 
 Reserved / documented-only until wired into templates: `HOMELAB_REPO_URL`, `TRYHACKME_PROFILE_URL`, `SITE_CANONICAL_ORIGIN`, `ABOUT_HTML`.
 

@@ -33,8 +33,6 @@ const defaults = {
   MAINT_ARTICLE_TITLE: "We will be back soon",
   MAINT_BODY_1:
     "This domain is in maintenance mode while a newer site is prepared. Thank you for your patience.",
-  MAINT_BODY_2:
-    "The archived static showcase for lab-style projects is kept in the repository under the <code>showcase/</code> folder and is not linked from this landing page by default.",
 };
 
 /** @returns {Record<string, string>} */
