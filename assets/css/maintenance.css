@@ -1,0 +1,97 @@
+/**
+ * Maintenance landing only (body.maintenance-page).
+ * Forces a vertical stack of “cards” at every breakpoint — no side-by-side sidebar + content.
+ */
+
+body.maintenance-page main {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+  width: min(100% - 24px, 520px);
+  max-width: 520px;
+  margin-inline: auto;
+  margin-top: 24px;
+  margin-bottom: 48px;
+  min-width: 0;
+}
+
+body.maintenance-page .sidebar {
+  position: relative;
+  top: auto;
+  max-height: none;
+  height: auto;
+  margin-bottom: 0;
+  padding-top: 24px;
+}
+
+body.maintenance-page .main-content {
+  position: relative;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+
+body.maintenance-page .contacts-list {
+  grid-template-columns: 1fr !important;
+}
+
+@media (min-width: 580px) {
+  body.maintenance-page .sidebar,
+  body.maintenance-page article {
+    width: 100% !important;
+    margin-inline: 0 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  body.maintenance-page .sidebar,
+  body.maintenance-page article {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  body.maintenance-page .sidebar,
+  body.maintenance-page article {
+    width: 100% !important;
+    box-shadow: var(--shadow-5);
+  }
+
+  body.maintenance-page main {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 1250px) {
+  body.maintenance-page main {
+    max-width: 560px;
+    gap: 24px;
+    margin-top: 48px;
+    margin-inline: auto;
+  }
+
+  body.maintenance-page .sidebar {
+    padding-top: 30px;
+    margin-bottom: 0;
+    z-index: 1;
+  }
+
+  body.maintenance-page .sidebar,
+  body.maintenance-page article {
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 0;
+  }
+
+  body.maintenance-page .main-content {
+    min-width: 0 !important;
+    width: 100% !important;
+  }
+
+  body.maintenance-page .info-content .name {
+    white-space: normal;
+    text-align: center;
+  }
+}
