@@ -1,0 +1,7 @@
+{
+  "name": "personal-website-showcase",
+  "private": true,
+  "scripts": {
+    "preview": "npx --yes serve@14 . -l 4173"
+  }
+}
