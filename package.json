@@ -1,0 +1,12 @@
+{
+  "name": "personal-website-showcase",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:dist-maintenance": "node scripts/build.mjs --dist-maintenance"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}

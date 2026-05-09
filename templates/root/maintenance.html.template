@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site maintenance</title>
+  <title>{{MAINT_SITE_TITLE}}</title>
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,12 +21,12 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/portrait.png" alt="" width="80">
+          <img src="./assets/images/portrait.png" alt="{{MAINT_AVATAR_ALT}}" width="80">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Maintenance">Maintenance</h1>
-          <p class="title">Updates in progress</p>
+          <h1 class="name" title="{{MAINT_DISPLAY_NAME}}">{{MAINT_DISPLAY_NAME}}</h1>
+          <p class="title">{{MAINT_PROFILE_TITLE}}</p>
         </div>
 
       </div>
@@ -40,7 +40,7 @@
             </div>
             <div class="contact-info">
               <p class="contact-title">Status</p>
-              <p class="contact-link" style="cursor: default;">Public portfolio code lives in this repository; the live domain is temporarily parked here.</p>
+              <p class="contact-link" style="cursor: default;">{{MAINT_STATUS_TEXT}}</p>
             </div>
           </li>
         </ul>
@@ -53,12 +53,12 @@
       <article class="about active" data-page="about">
 
         <header>
-          <h2 class="h2 article-title">We will be back soon</h2>
+          <h2 class="h2 article-title">{{MAINT_ARTICLE_TITLE}}</h2>
         </header>
 
         <section class="about-text">
-          <p>This domain is in maintenance mode while a newer site is prepared. Thank you for your patience.</p>
-          <p>The archived static showcase for lab-style projects is kept in the repository under the <code>showcase/</code> folder and is not linked from this landing page by default.</p>
+          <p>{{MAINT_BODY_1}}</p>
+          <p>{{MAINT_BODY_2}}</p>
         </section>
 
       </article>

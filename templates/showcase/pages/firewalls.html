@@ -5,17 +5,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Atahan's Personal Website</title>
+  <title>{{SITE_TITLE}}</title>
 
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon">
 
   <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/style.css">
 
   <!--
     - google font link
@@ -42,14 +42,14 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="../assets/images/profile.jpg" alt="Atahan Kucuk" width="80">
+          <img src="../../assets/images/portrait.png" alt="{{PROFILE_IMAGE_ALT}}" width="80">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Atahan Kucuk">Atahan Kucuk</h1>
+          <h1 class="name" title="{{DISPLAY_NAME}}">{{DISPLAY_NAME}}</h1>
 
           
-          <p class="title"> Network & Security Engineer</p>
+          <p class="title">{{PROFILE_TITLE}}</p>
             
         
         </div>
@@ -68,61 +68,11 @@
 
         <ul class="contacts-list">
 
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:atahan@atahankucuk.com" class="contact-link">atahan@atahankucuk.com</a>
-            </div>
-
-          </li>
-
-         
-          
-        <li class="contact-item">
-
-          <div class="icon-box">
-            <ion-icon name="location-outline"></ion-icon>
-          </div>
-
-          <div class="contact-info">
-            <p class="contact-title">Location</p>
-
-            <address>Istanbul, Turkey</address>
-          </div>
-
-        </li>
-
-          <li class="contact-item">
-            <form method="get" action="../assets/pdf/Atahan_Kucuk_Resume.pdf">
-              <button class="form-btn" type="submit">My Full Resume</button>
-            </form>
-          </li>
-
         </ul>
 
         <div class="separator"></div>
 
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/atahan-kucuk/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://github.com/atahan99" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
+        <ul class="social-list"></ul>
 
       </div>
 
@@ -152,7 +102,7 @@
           </li>
         -->
         <li>
-          <button class="navbar-link active" data-nav-link onclick="window.location.href='https://www.atahankucuk.com/'">Back</button>
+          <button class="navbar-link active" type="button" onclick="window.location.href='../index.html'">Back</button>
         </li>
         
         
@@ -186,7 +136,7 @@
 
         </p>
           <h4 class="h4 timeline-item-title"> <font color="DodgerBlue"><strong>Firewalls: </strong></font> <font color="#FFFFFF"><strong> PfSense, VyOS</strong></font></h4>
-          <img src="../assets/images/works/firewalls_1.jpg" alt="incident" width="100%" class="center">
+          <img src="../../assets/images/works/firewalls_1.jpg" alt="incident" width="100%" class="center">
 
           <p> </p>
 
@@ -211,7 +161,7 @@
   <!--
     - custom js link
   -->
-  <script src="../assets/js/script.js"></script>
+  <script src="../../assets/js/script.js"></script>
 
   <!--
     - ionicon link
