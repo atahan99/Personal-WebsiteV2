@@ -1,0 +1,47 @@
+# Publishes ONLY the maintenance landing (root index.html + assets/ + optional CNAME).
+# Showcase HTML under showcase/ is not uploaded — URLs under /showcase/ will 404 on the live site.
+name: Deploy maintenance site to Pages
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-maintenance
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Prepare maintenance bundle
+        run: |
+          mkdir -p _site
+          cp index.html _site/
+          cp -r assets _site/
+          if [ -f CNAME ]; then cp CNAME _site/; fi
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
