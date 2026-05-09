@@ -1,121 +1,110 @@
-# Personal website (archived static showcase)
+# vCard — Personal portfolio (showcase fork)
 
-Historical **HTML/CSS/JS** portfolio. The repository is sanitized for public hosting: **no email, resume PDF, location, or social links are embedded by default** (they can be reintroduced locally via `.env` + `npm run build`).
+![GitHub repo size](https://img.shields.io/github/repo-size/atahan99/Personal-WebsiteV2)
+[![Pages](https://img.shields.io/badge/GitHub-Pages-222?style=flat&logo=github)](https://pages.github.com/)
 
-**Live domain note:** `index.html` at the repository root is a **maintenance landing page**. The full multi-page showcase lives under [`showcase/`](showcase/).
+**vCard** is a responsive personal portfolio template ([original theme](https://github.com/codewithsadee/vcard-personal-portfolio)). This repository is a **sanitized showcase**: vanilla **HTML, CSS, and JavaScript**, wired for **GitHub Pages**, with lab/project detail pages and a filterable portfolio section.
 
----
-
-## Screenshots for this README
-
-Capture screenshots **after** the PII cleanup (i.e. now): use either the maintenance page (`/`) or open [`showcase/index.html`](showcase/index.html) locally (`npm run build` first if you edited templates). That avoids leaking old contact details into images.
+Root **`/`** is intentionally a **maintenance landing** while a newer site ships elsewhere; the **full static demo** lives under **`/showcase/`**.
 
 ---
 
-## Fork / theme credit
+## Preview locally
 
-Based on [codewithsadee/vcard-personal-portfolio](https://github.com/codewithsadee/vcard-personal-portfolio).
-
----
-
-## Environment variables (`.env.example`)
-
-Copy [`.env.example`](.env.example) to `.env` and run `npm run build`. Empty optional fields remove the matching sidebar blocks.
-
-| Variable | Used for |
-|----------|-----------|
-| `SITE_TITLE` | `<title>` on showcase pages |
-| `DISPLAY_NAME` | Sidebar name / `title` attribute |
-| `PROFILE_TITLE` | Sidebar subtitle |
-| `PROFILE_IMAGE_ALT` | Avatar `alt` text |
-| `PUBLIC_EMAIL` | Enables email row + `mailto:` |
-| `PUBLIC_EMAIL_VISIBLE` | Link text (defaults to `PUBLIC_EMAIL` if unset) |
-| `PUBLIC_EMAIL_LABEL` | “Email” column label |
-| `LOCATION_LABEL` | Location row |
-| `LINKEDIN_URL` | LinkedIn icon link |
-| `GITHUB_PROFILE_URL` | GitHub icon link |
-| `MAINT_SITE_TITLE` | Maintenance page `<title>` |
-| `MAINT_DISPLAY_NAME` | Maintenance sidebar heading |
-| `MAINT_PROFILE_TITLE` | Maintenance sidebar subtitle |
-| `MAINT_AVATAR_ALT` | Maintenance avatar alt |
-| `MAINT_STATUS_TEXT` | Maintenance status blurb |
-| `MAINT_ARTICLE_TITLE` | Maintenance main heading |
-| `MAINT_BODY_1` | Maintenance paragraph (plain text) |
-| `MAINT_BODY_2` | Maintenance paragraph (may include HTML, e.g. `<code>`) |
-
-Reserved for documentation / future templating (not substituted by [`scripts/build.mjs`](scripts/build.mjs) today): `HOMELAB_REPO_URL`, `TRYHACKME_PROFILE_URL`, `SITE_CANONICAL_ORIGIN`, `ABOUT_HTML`.
-
----
-
-## Removed identifiers (do not re-commit)
-
-These appeared in earlier revisions of the HTML and are **removed** from [`templates/`](templates/). Restore **only** in a private `.env` / local build if you need them again.
-
-| Removed | If restoring locally |
-|---------|----------------------|
-| Legal name in titles / headings / avatar alt | `DISPLAY_NAME`, `PROFILE_IMAGE_ALT`, `SITE_TITLE` |
-| Personal email + `mailto:` | `PUBLIC_EMAIL`, `PUBLIC_EMAIL_VISIBLE`, `PUBLIC_EMAIL_LABEL` |
-| City / country | `LOCATION_LABEL` |
-| LinkedIn profile URL | `LINKEDIN_URL` |
-| GitHub profile URL | `GITHUB_PROFILE_URL` |
-| Resume PDF + sidebar button | **Removed permanently** (no env) |
-| Homelab repo URL in timeline | **Removed** — use `HOMELAB_REPO_URL` only after wiring templates |
-| TryHackMe profile URL | **Removed** — use `TRYHACKME_PROFILE_URL` only after wiring templates |
-| Legacy third-party preview hostname (expired / unsafe) | **Never restore** |
-| Long first-person bio with school + location | Replaced with neutral copy in templates |
-
----
-
-## Build
+From the repository root:
 
 ```bash
 npm install
-npm run build
+npm run build        # regenerate showcase/, index.html, and maintenance.html from templates/
+npm run preview      # static server → http://localhost:4173/
 ```
 
-- Reads [`templates/showcase/`](templates/showcase/) and writes [`showcase/`](showcase/).
-- Writes root [`index.html`](index.html) and [`maintenance.html`](maintenance.html) from [`templates/root/`](templates/root/).
+Then open:
 
-Maintenance bundle (single-site folder with `assets/` + `CNAME`):
+| URL | What you see |
+|-----|----------------|
+| [http://localhost:4173/](http://localhost:4173/) | Maintenance landing (`index.html`) |
+| [http://localhost:4173/showcase/](http://localhost:4173/showcase/) | Full vCard-style portfolio |
+| [http://localhost:4173/showcase/pages/](http://localhost:4173/showcase/pages/) | Individual project write-ups |
+
+No bundler required—the preview serves files as-is.
+
+---
+
+## Highlights
+
+- **Responsive layout** with sidebar profile shell and main content tabs (**About**, **Experience**, **Portfolio**).
+- **Portfolio filters** (Networking / Programming / Hacking) with desktop buttons + mobile select UI.
+- **Project gallery** linking to dedicated HTML pages under [`showcase/pages/`](showcase/pages/).
+- **Small HTML token build**: edit [`templates/`](templates/), set optional values in `.env`, run **`npm run build`** ([`scripts/build.mjs`](scripts/build.mjs)).
+- **Optional sidebar contacts**: email, location, LinkedIn, and GitHub appear only when set in `.env` (safe defaults ship empty).
+
+---
+
+## Repository layout
+
+| Path | Role |
+|------|------|
+| [`templates/showcase/`](templates/showcase/) | Tokenized sources for the full portfolio |
+| [`templates/root/`](templates/root/) | Maintenance templates (`index.html`, `maintenance.html`) |
+| [`showcase/`](showcase/) | Generated portfolio tree (**run build after editing templates**) |
+| [`assets/`](assets/) | Shared CSS, JS, icons, portrait (`css/style.css`, `js/script.js`) |
+| [`scripts/build.mjs`](scripts/build.mjs) | Merge `.env` + emit HTML |
+
+Strict maintenance-only bundle (publish folder root **without** exposing `/showcase/` URLs):
 
 ```bash
-npm run build:dist-maintenance
+npm run build:dist-maintenance   # → dist/maintenance/
 ```
 
-Output: [`dist/maintenance/`](dist/maintenance/) — suitable as the **only** published root if you want zero `/showcase/` URL exposure (e.g. upload that folder to GitHub Pages or an artifact branch).
+---
+
+## Customization (`.env`)
+
+Copy [`.env.example`](.env.example) → `.env`, adjust variables, then `npm run build`.
+
+| Variable | Purpose |
+|----------|---------|
+| `SITE_TITLE`, `DISPLAY_NAME`, `PROFILE_TITLE`, `PROFILE_IMAGE_ALT` | Showcase branding |
+| `PUBLIC_EMAIL`, `PUBLIC_EMAIL_VISIBLE`, `PUBLIC_EMAIL_LABEL`, `LOCATION_LABEL` | Optional contact rows |
+| `LINKEDIN_URL`, `GITHUB_PROFILE_URL` | Optional social icons |
+| `MAINT_*` | Maintenance page copy (`MAINT_BODY_2` may contain HTML such as `<code>`) |
+
+Reserved / documented-only until wired into templates: `HOMELAB_REPO_URL`, `TRYHACKME_PROFILE_URL`, `SITE_CANONICAL_ORIGIN`, `ABOUT_HTML`.
+
+The downloadable resume PDF and similar attachments were **removed** by design; re-add only through your own assets if you fork.
 
 ---
 
 ## GitHub Pages
 
-- [`CNAME`](CNAME) declares the custom hostname for GitHub Pages ([docs](https://docs.github.com/pages/configuring-a-custom-domain-for-your-github-pages-site)).
-- **Whole-repo publishing:** GitHub serves `/` from root `index.html` (maintenance) and still exposes `/showcase/…` if someone guesses the path.
-- **Strict maintenance-only:** publish **`dist/maintenance/`** contents as the site root (manual upload, Actions, or `gh-pages` branch), so the showcase files are not online.
+- [`CNAME`](CNAME) ties GitHub Pages to your **custom hostname** ([documentation](https://docs.github.com/pages/configuring-a-custom-domain-for-your-github-pages-site)).
+- Publishing **the whole repository** serves `/` (maintenance) and **still allows** `/showcase/…` if someone navigates there directly.
+- To publish **only** the landing page, deploy **`dist/maintenance/`** as the site root.
 
 ---
 
-## Portrait image
+## README screenshots
 
-[`assets/images/portrait.png`](assets/images/portrait.png) is an illustrative avatar (sourced from another repo **once** and vendored here so Pages does not depend on an external raw URL).
-
----
-
-## Maintenance files when moving to Next.js
-
-Delete [`maintenance.html`](maintenance.html), replace root [`index.html`](index.html), and remove maintenance-related npm scripts when the new site replaces this deployment.
+Capture images **after** the sanitized build so thumbnails match what visitors actually see—either `/` (maintenance) or `/showcase/` (portfolio demo).
 
 ---
 
-## 2026 cleanup summary
+## Credits
 
-- Removed embedded PII and unsafe expired preview links from templates.
-- Added `.env`-driven optional sidebar blocks + maintenance copy via [`scripts/build.mjs`](scripts/build.mjs).
-- Moved the multi-page portfolio under [`showcase/`](showcase/); root serves maintenance.
-- Fixed navbar tab logic (loop shadowing) and hardened [`assets/js/script.js`](assets/js/script.js) for pages without portfolio widgets.
-- Normalized “Back” navigation to `../index.html` inside [`showcase/pages/`](showcase/pages/).
+- Theme fork / inspiration: [codewithsadee/vcard-personal-portfolio](https://github.com/codewithsadee/vcard-personal-portfolio).
+- Ionicons loaded from CDN on showcase pages.
 
 ---
 
-## License / visuals
+## Cleanup notes (2026)
 
-Audit [`showcase/`](showcase/) lab screenshots before publishing if any frame might contain credentials or hostnames from old environments.
+Portfolio defaults were scrubbed for a **public showcase**: identifying sidebar fields and risky outbound preview URLs were stripped from templates; navbar/filter JS got defensive guards and a tab-state bugfix. See `.env.example` if you want to layer personal links back in **locally** without committing secrets.
+
+Audit lab screenshots under [`showcase/`](showcase/) for stray credentials or hostnames before you reuse them elsewhere.
+
+---
+
+## When replacing this site (e.g. Next.js)
+
+Remove [`maintenance.html`](maintenance.html), replace root [`index.html`](index.html), and drop maintenance-specific npm scripts once the new deployment owns the domain.

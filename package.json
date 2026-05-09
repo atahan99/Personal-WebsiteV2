@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "build:dist-maintenance": "node scripts/build.mjs --dist-maintenance"
+    "build:dist-maintenance": "node scripts/build.mjs --dist-maintenance",
+    "preview": "npx --yes serve@14 . -l 4173"
   },
   "dependencies": {
     "dotenv": "^16.4.5"
