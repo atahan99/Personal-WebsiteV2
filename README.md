@@ -37,6 +37,8 @@ Open **http://localhost:4173/** (maintenance) and **http://localhost:4173/showca
 
 **Customization:** edit the HTML files above (titles, sidebar copy, links, images paths).
 
+[`.env.example`](.env.example) lists common labels you might use **for yourself** (names, titles, optional URLs). Nothing reads it automatically—keep real values in a local `.env` (gitignored) or paste only what you want into HTML.
+
 ---
 
 ## GitHub Pages
